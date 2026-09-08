@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Mubeen Hassan — Robotics &amp; AI Engineer</title>
+<meta name="description" content="Robotics & AI engineer building autonomous machines, reverse-engineering industrial systems, and leading funded R&D teams.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<nav class="nav">
+  <a href="#top" class="nav-logo">MMH<span class="dot">.</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="#lab" data-nav>The Lab</a>
+    <a href="#garage" data-nav>Built By Hand</a>
+    <a href="#command" data-nav>Leadership</a>
+    <a href="#toolkit" data-nav>Toolkit</a>
+    <a href="#contact" data-nav class="nav-cta">Contact</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <canvas id="particles"></canvas>
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?auto=format&fit=crop&w=2400&q=80');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow reveal">ROBOTICS <span class="x">×</span> ARTIFICIAL INTELLIGENCE</p>
+    <h1 class="hero-title reveal">
+      I build machines<br> that move —<br>
+      <span class="accent-text">and minds that learn<br> to move them.</span>
+    </h1>
+    <p class="hero-sub reveal">Muhammad Mubeen Hassan — turning warehouses, waste bins, and reverse-engineered black boxes into working systems. One funded prototype at a time.</p>
+    <div class="hero-cta reveal">
+      <a href="#lab" class="btn btn-primary">See the work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+<!-- ============ MANIFESTO ============ -->
+<section class="manifesto">
+  <div class="circuit-divider" aria-hidden="true"></div>
+  <div class="container">
+    <p class="reveal manifesto-line">Most people study robots.</p>
+    <p class="reveal manifesto-line manifesto-strong">I ship them.</p>
+    <p class="reveal manifesto-body">
+      Somewhere between a stepper motor and a line of embedded C, most people find a hobby.
+      I found a job description. By my sixth semester at the University of Central Punjab, I was
+      already leading three funded R&amp;D projects — reporting straight to a CEO, negotiating with
+      suppliers overseas, and still finding time to debug my own boards at 1 a.m. This is what
+      happens when curiosity refuses to stay theoretical.
+    </p>
+  </div>
+</section>
+
+<!-- ============ THE LAB — SCROLLYTELLING ============ -->
+<section class="lab" id="lab">
+  <div class="container">
+    <p class="eyebrow reveal">CREATIVE GROUP OF COMPANIES · OCT 2025 — PRESENT</p>
+    <h2 class="section-title reveal">Three funded projects.<br>One engineer holding the technical keys.</h2>
+  </div>
+
+  <div class="lab-scroller">
+    <div class="lab-sticky">
+      <div class="lab-sticky-inner">
+        <div class="lab-image-stack">
+          <img src="https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?auto=format&fit=crop&w=1600&q=80" alt="Industrial robotic arm" class="lab-img active" data-lab-img="1">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80" alt="Circuit board macro" class="lab-img" data-lab-img="2">
+          <img src="https://images.unsplash.com/photo-1563520240344-52b067aa5f84?auto=format&fit=crop&w=1600&q=80" alt="3D printer" class="lab-img" data-lab-img="3">
+        </div>
+        <div class="lab-progress">
+          <span data-lab-dot="1" class="active"></span>
+          <span data-lab-dot="2"></span>
+          <span data-lab-dot="3"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lab-panels">
+      <article class="lab-panel" data-lab-panel="1">
+        <span class="lab-num">01 / 03</span>
+        <span class="lab-tag">Autonomous Mobile Robot · Final Year Project</span>
+        <h3>The Warehouse Learns to Walk</h3>
+        <p>A 250 kg-capacity, 6-way shuttle AMR built to move inventory the way the best
+        automated warehouses in the world already do — studied from systems like Zikoo Robotics
+        and Mecalux, then reverse-engineered and rebuilt from first principles for our own floor.
+        It also happens to be my Final Year Project, which means the stakes are real on two
+        scorecards at once.</p>
+        <ul class="lab-facts">
+          <li>Team Lead — electronics, embedded control, navigation, debugging</li>
+          <li>Reports directly to the CEO for fund approvals &amp; sourcing</li>
+          <li>Status: active build</li>
+        </ul>
+        <a href="https://github.com/mubeenhassanmeer/amr-warehouse-robot" target="_blank" rel="noopener" class="lab-link">View on GitHub →</a>
+      </article>
+
+      <article class="lab-panel" data-lab-panel="2">
+        <span class="lab-num">02 / 03</span>
+        <span class="lab-tag">Reverse-Engineered Inventory Automation</span>
+        <h3>Breaking It Down to Build It Better</h3>
+        <p>An imported inventory system from Monolith arrived as a sealed black box. It's leaving
+        as an STM32-powered, RS485-networked, RFID-secured system I designed after months of
+        teardown, direct supplier negotiation in China, and a full architecture redesign — now deep
+        in PCB layout.</p>
+        <ul class="lab-facts">
+          <li>Sourced sample units, ran teardown &amp; produced the reverse-engineering plan</li>
+          <li>Negotiated with Chinese suppliers, secured the PI, coordinated import</li>
+          <li>Status: PCB design phase</li>
+        </ul>
+        <a href="https://github.com/mubeenhassanmeer/inventory-automation-reverse-engineered" target="_blank" rel="noopener" class="lab-link">View on GitHub →</a>
+      </article>
+
+      <article class="lab-panel" data-lab-panel="3">
+        <span class="lab-num">03 / 03</span>
+        <span class="lab-tag">3D Printer · Market-Ready Build</span>
+        <h3>From Lab Tool to Market Product</h3>
+        <p>The first printer got the lab printing prototypes — a Siboor-based build on a Raspberry
+        Pi + BTT control stack. The second is being reverse-engineered from scratch into something
+        we can actually sell, and that one is mine to lead: design, sourcing, and delivery.</p>
+        <ul class="lab-facts">
+          <li>Contributor on Printer #1 · Team Lead on Printer #2</li>
+          <li>Full fund approval &amp; supplier negotiation ownership</li>
+          <li>Status: active design</li>
+        </ul>
+        <a href="https://github.com/mubeenhassanmeer/3d-printer-build" target="_blank" rel="noopener" class="lab-link">View on GitHub →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUILT BY HAND ============ -->
+<section class="garage" id="garage">
+  <div class="container">
+    <p class="eyebrow reveal">BEFORE THE FUNDING, THERE WAS THE WORKBENCH</p>
+    <h2 class="section-title reveal">Every engineer has an origin story.<br>Here's mine in five machines.</h2>
+
+    <div class="garage-grid">
+      <a class="garage-card reveal" href="https://github.com/mubeenhassanmeer/lower-limb-exoskeleton" target="_blank" rel="noopener">
+        <span class="garage-icon">🦿</span>
+        <h3>Lower Limb Exoskeleton</h3>
+        <p>Gait analysis turned into motor commands. Arduino Mega, stepper motors on TB6600
+        drivers, and a senior's Final Year Project riding entirely on my wiring.</p>
+        <span class="garage-more">View repo →</span>
+      </a>
+      <a class="garage-card reveal" href="https://github.com/mubeenhassanmeer/warehouse-automation-prototype" target="_blank" rel="noopener">
+        <span class="garage-icon">🏭</span>
+        <h3>Warehouse Automation Prototype</h3>
+        <p>The 4-month, 2-person, ESP32-S3 proof-of-concept that came before the funding did —
+        the demo that became the pitch.</p>
+        <span class="garage-more">View repo →</span>
+      </a>
+      <a class="garage-card reveal" href="https://github.com/mubeenhassanmeer/bin-e-smart-waste-bin" target="_blank" rel="noopener">
+        <span class="garage-icon">🗑️</span>
+        <h3>Bin-e Smart Waste Bin</h3>
+        <p>A Raspberry Pi that watches your trash and knows what it's looking at — vision
+        classification, fill-level sensing, GPS tracking, wired end-to-end by me.</p>
+        <span class="garage-more">View repo →</span>
+      </a>
+      <a class="garage-card reveal" href="https://github.com/mubeenhassanmeer/obstacle-avoidance-robot" target="_blank" rel="noopener">
+        <span class="garage-icon">🚧</span>
+        <h3>Obstacle Avoidance Robot</h3>
+        <p>Ultrasonic eyes on a 2WD chassis. The first robot that ever listened to my code —
+        and didn't crash into anything.</p>
+        <span class="garage-more">View repo →</span>
+      </a>
+      <a class="garage-card reveal" href="https://github.com/mubeenhassanmeer/uipath-autonomous-outreach-robot" target="_blank" rel="noopener">
+        <span class="garage-icon">📣</span>
+        <h3>UiPath Outreach Bot</h3>
+        <p>A robot with no wheels — it has a CRM instead. Finds leads, reaches out personally,
+        never sleeps.</p>
+        <span class="garage-more">View repo →</span>
+      </a>
+      <a class="garage-card garage-card-cta reveal" href="https://github.com/mubeenhassanmeer" target="_blank" rel="noopener">
+        <span class="garage-icon">💻</span>
+        <h3>See everything else</h3>
+        <p>Full source, build logs, and whatever I'm shipping this week — it all lives on GitHub.</p>
+        <span class="garage-more">github.com/mubeenhassanmeer →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMAND & COORDINATE ============ -->
+<section class="command" id="command">
+  <div class="command-bg" style="background-image:url('https://images.unsplash.com/photo-1767955063920-afa336498158?auto=format&fit=crop&w=2000&q=80');"></div>
+  <div class="command-overlay"></div>
+  <div class="container">
+    <p class="eyebrow reveal">IEEE UCP STUDENT BRANCH</p>
+    <h2 class="section-title reveal">Turns out leading robots<br>and leading people rhyme.</h2>
+    <p class="reveal command-body">
+      Vice President of IEEE UCP. Former General Secretary. Co-Director of Techathon 2.0 — eleven
+      competitions, three days, one very long closing ceremony. Somewhere in between, I also
+      became SkyPower&rsquo;s go-to for &ldquo;can you fix it&rdquo; and UCP&rsquo;s go-to for &ldquo;can you teach it.&rdquo;
+    </p>
+
+    <div class="stats-row">
+      <div class="stat reveal">
+        <span class="stat-num" data-count="3">0</span>
+        <span class="stat-label">Funded R&amp;D projects led</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num" data-count="11">0</span>
+        <span class="stat-label">Competitions run at Techathon 2.0</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num" data-count="3">0</span>
+        <span class="stat-label">Days directing a flagship tech event</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num" data-count="436" data-suffix="+">0</span>
+        <span class="stat-label">People following the build, live on LinkedIn</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLKIT ============ -->
+<section class="toolkit" id="toolkit">
+  <div class="container">
+    <p class="eyebrow reveal">WHAT'S IN THE TOOLBOX</p>
+    <h2 class="section-title reveal">Hardware, firmware, and everything<br>that turns intent into motion.</h2>
+
+    <div class="toolkit-grid">
+      <div class="toolkit-cat reveal">
+        <h4>Robotics &amp; Hardware</h4>
+        <div class="pills">
+          <span>Arduino</span><span>ESP32 / ESP32-S3</span><span>STM32</span><span>Raspberry Pi</span>
+          <span>Electronics &amp; Circuit Design</span><span>Webots</span><span>TinkerCAD</span>
+        </div>
+      </div>
+      <div class="toolkit-cat reveal">
+        <h4>Automation &amp; RPA</h4>
+        <div class="pills">
+          <span>UiPath Studio</span><span>UiPath Orchestrator</span><span>UiPath Website Studio</span><span>Power Automate</span>
+        </div>
+      </div>
+      <div class="toolkit-cat reveal">
+        <h4>AI &amp; Systems</h4>
+        <div class="pills">
+          <span>Agentic AI</span><span>ML Model Integration</span><span>Vision-Based Classification</span>
+        </div>
+      </div>
+      <div class="toolkit-cat reveal">
+        <h4>Leadership &amp; Ops</h4>
+        <div class="pills">
+          <span>Team Leadership</span><span>CEO Reporting</span><span>Fund Approvals</span><span>Supplier Negotiation</span><span>Event Direction</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolkit-photo reveal">
+      <img src="https://images.unsplash.com/photo-1753715613434-9c7cb58876b9?auto=format&fit=crop&w=1600&q=80" alt="Late-night engineering workspace">
+      <div class="toolkit-photo-caption">Most breakthroughs happen after everyone else has logged off.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="timeline-section" id="timeline">
+  <div class="container">
+    <p class="eyebrow reveal">HOW I GOT HERE</p>
+    <h2 class="section-title reveal">Education &amp; milestones.</h2>
+
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <span class="tl-year">2023 — 2027</span>
+        <h4>BS Robotics &amp; Intelligent Systems</h4>
+        <p>University of Central Punjab (UCP) — Semester 6.</p>
+      </div>
+      <div class="tl-item reveal">
+        <span class="tl-year">2021 — 2023</span>
+        <h4>F.Sc Pre-Engineering</h4>
+        <p>Nishat College, Multan — Fully Funded Scholarship.</p>
+      </div>
+      <div class="tl-item reveal">
+        <span class="tl-year">2017 — 2019</span>
+        <h4>Matriculation</h4>
+        <p>The Professors' Grammar School, Jalalpur Pirwala — Top 5 performer district-wide, 1059/1100 marks (BISE Multan).</p>
+      </div>
+    </div>
+
+    <div class="achievements reveal">
+      <div class="ach">🏆 Emerging Star of the Year — IEEE Lahore Section, 2026</div>
+      <div class="ach">🎓 Fully Funded Merit Scholarship — UCP, 2023–2027</div>
+      <div class="ach">🎓 Nishat College Fully Funded Scholarship</div>
+      <div class="ach">🎓 Punjab Educational Endowment Fund (PEEF) Scholarship — 2018</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <p class="eyebrow reveal">OPEN TO</p>
+    <h2 class="contact-title reveal">Research internships. Robotics<br>collaborations. Conversations that<br>start with &ldquo;what if.&rdquo;</h2>
+    <p class="reveal contact-body">Currently building three funded R&amp;D projects by day and hunting international
+      opportunities by night. If you're working on something that moves — physically or
+      algorithmically — let's talk.</p>
+
+    <div class="contact-links reveal">
+      <a href="mailto:mobinmeer5@gmail.com" class="contact-link">
+        <span class="cl-label">Email</span>
+        <span class="cl-value">mobinmeer5@gmail.com</span>
+      </a>
+      <a href="tel:+923036856510" class="contact-link">
+        <span class="cl-label">Phone</span>
+        <span class="cl-value">+92 303 6856510</span>
+      </a>
+      <a href="https://github.com/mubeenhassanmeer" target="_blank" rel="noopener" class="contact-link">
+        <span class="cl-label">GitHub</span>
+        <span class="cl-value">mubeenhassanmeer</span>
+      </a>
+      <a href="https://www.linkedin.com/in/mubeen-hassan-automation-robotics" target="_blank" rel="noopener" class="contact-link">
+        <span class="cl-label">LinkedIn</span>
+        <span class="cl-value">mubeen-hassan-automation-robotics</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Muhammad Mubeen Hassan · Lahore, Pakistan</p>
+  <p class="footer-credit">Photos via Unsplash — used under the Unsplash License.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
